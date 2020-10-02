@@ -7,7 +7,7 @@
     <link href="{% static '../../static/css/main.css' %}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 <body>
     <br>
@@ -41,7 +41,16 @@
                                 <dt><small>Nabeul, Tunisia</small></dt>
                                 <dt>Tasks:</dt>
                                 <dd>
-                                    <ul>
+                                    <ul class="expandible">
+                                        <li>aaaa</li>
+                                        <li>zzzz</li>
+                                        <li>eeee</li>
+                                        <li>aaaa</li>
+                                        <li>zzzz</li>
+                                        <li>eeee</li>
+                                        <li>aaaa</li>
+                                        <li>zzzz</li>
+                                        <li>eeee</li>
                                         <li>aaaa</li>
                                         <li>zzzz</li>
                                         <li>eeee</li>
@@ -89,15 +98,6 @@
                     <p>glkghfliuhzelmfiusqmegh</p>
                     <p>glkghfliuhzelmfiusqmegh</p>
                     <p>glkghfliuhzelmfiusqmegh</p>
-                    <p>glkghfliuhzelmfiusqmegh</p>
-                    <p>glkghfliuhzelmfiusqmegh</p>
-                    <p>glkghfliuhzelmfiusqmegh</p>
-                    <p>glkghfliuhzelmfiusqmegh</p>
-                    <p>glkghfliuhzelmfiusqmegh</p>
-                    <p>glkghfliuhzelmfiusqmegh</p>
-                    <p>glkghfliuhzelmfiusqmegh</p>
-                    <p>glkghfliuhzelmfiusqmegh</p>
-                    <p>glkghfliuhzelmfiusqmegh</p>
                 </div>
                 <br>
                 <h5>My short term goals</h5>
@@ -113,7 +113,7 @@
             <div class="col-md-7"><h5>How i learned</h5>
                 <div class="card card-body"></div>
             </div>
-            <div class="col-md-5"><h5> My Certifications</h5>
+            <div class="col-md-5"><h5> Accomplishments</h5>
                 <div class="card card-body">
                 </div>
             </div>
@@ -124,3 +124,24 @@
     </div>
 </body>
 </html>
+
+<script>
+    $('ul.expandible').each(function(){
+    var $ul = $(this),
+        $lis = $ul.find('li:gt(1)'),
+        isExpanded = $ul.hasClass('expanded');
+    $lis[isExpanded ? 'show' : 'hide']();
+
+    if($lis.length > 0){
+        $ul
+            .append($('<span class="showmore"><li class="expand">' + (isExpanded ? 'Show Less' : 'Show More') + '</li></span>')
+            .click(function(event){
+                var isExpanded = $ul.hasClass('expanded');
+                event.preventDefault();
+                $(this).html(isExpanded ? '...Show More' : 'Show Less');
+                $ul.toggleClass('expanded');
+                $lis.toggle();
+            }));
+    }
+});
+</script>
