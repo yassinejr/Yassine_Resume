@@ -20,6 +20,7 @@
 .social-media-pic{
     width:20px;
     height:20px;
+    margin-bottom:5px;
 }
 
 .label {
@@ -27,9 +28,23 @@
   padding: 8px;
 }
 
-.success {background-color: #4CAF50;} /* Green */
-
 .showmore {
 	cursor: pointer;
 	font-weight: bold;
+	font-color: blue;
+}
+*{
+    box-sizing: border-box;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.grid-container {
+  display: grid;
+  justify-content: space-around;
 }

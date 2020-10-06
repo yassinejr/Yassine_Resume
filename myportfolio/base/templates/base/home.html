@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Yassine JRAD</title>
     {% load static %}
-    <link href="{% static '../../static/css/main.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static '../../static/css/style.css' %}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
@@ -17,67 +17,70 @@
                 <div id="profile-wrapper" class="card card-body  h-100 border-info">
                     <img id="profile-pic" src="{% static '../../static/images/0.jpeg' %}">
                     <hr>
+                    <h4>Yassine JRAD</h4>
                     <h4 class="title-size"> Python Developer | Software Engineer</h4>
                 </div>
             </div>
             <div class="col-md-9">
-                <div class="card card-body">
-                    <p> About me </p
-                    <img class="social-media-pic" src="{% static '../../static/images/linkedin.png' %}">
-                    <span class="label success">Success</span>
+                <div class="card card-body h-100 border-info">
+                    <p> About me </p>
+                    <hr>
+                    <img class="social-media-pic" src="{% static '../../static/images/whatsapp-icon.svg' %}">
+                    <img class="social-media-pic" src="{% static '../../static/images/gmail-icon.svg' %}">
+                    <img class="social-media-pic" src="{% static '../../static/images/linkedin-icon-2.svg' %}">
                 </div>
             </div>
         </div>
         <br>
         <div class="row">
-            <div class="col-md-7"><h5> My experience as a Software Engineer</h5>
+            <div class="col-md-8"><h5> My experience as a Software Engineer</h5>
                 <div class="card card-body h-100">
                     <ul>
                         <li>
                             <strong>Python/Django Backend Engineer</strong>
+                            <a href="https://neopolis-dev.com/"> <img src="{% static '../../static/images/Neo.jpeg' %}" style="float:right" width="120" height="100" title="Neopolis Development"></a>
                             <dl>
-                                <dt><small>Neopolis Development</small></dt>
+                                <dt>Neopolis Development</dt>
                                 <dt><small>Apr 2020-Present : 6 mos</small></dt>
                                 <dt><small>Nabeul, Tunisia</small></dt>
                                 <dt>Tasks:</dt>
                                 <dd>
                                     <ul class="expandible">
-                                        <li>aaaa</li>
-                                        <li>zzzz</li>
-                                        <li>eeee</li>
-                                        <li>aaaa</li>
-                                        <li>zzzz</li>
-                                        <li>eeee</li>
-                                        <li>aaaa</li>
-                                        <li>zzzz</li>
-                                        <li>eeee</li>
-                                        <li>aaaa</li>
-                                        <li>zzzz</li>
-                                        <li>eeee</li>
+                                        <li>Developing, testing and debugging software tools utilized by clients and
+internal customers</li>
+                                        <li>Coding test programs and evaluating existing engineering processes.</li>
+                                        <li>Collaborating with internal teams to convert end user feedback into
+meaningful and improved solutions.</li>
+                                        <li>Resolving ongoing problems and accurately documented progress of
+Python/Django project.</li>
+
                                     </ul>
                                 </dd>
                             </dl>
                         </li>
                         <li>
                             <strong>Software Engineer</strong>
+                            <img src="{% static '../../static/images/Phoenix.jpeg' %}" style="float:right" width="120" height="100" title="Neopolis Development">
                             <dl>
-                                <dt><small>Phoenix Mecano Elcom</small></dt>
+                                <dt>Phoenix Mecano Elcom</dt>
                                 <dt><small>Oct 2019-Apr 2020 : 6 mos</small></dt>
                                 <dt><small>Zaghouan, Tunisia</small></dt>
                                 <dt>Tasks:</dt>
                                 <dd>
-                                    <ul>
-                                        <li>aaaa</li>
-                                        <li>zzzz</li>
-                                        <li>eeee</li>
+                                    <ul class="expandible">
+                                        <li>Development a web application that allow acquiring data from Humidity
+and Temperator sensors : HTML5 ; CSS3 ; Javascript ; jQuery ; Python,
+Django, Raspberry Pi, NodeMCU</li>
+
                                     </ul>
                                 </dd>
                             </dl>
                         </li>
                         <li>
                             <strong>Software Engineer Intern</strong>
+                            <a href="https://www.addixo.com/fr/"> <img src="{% static '../../static/images/Addixo.png' %}" style="float:right" width="120" height="150" title="ADDIXO"></a>
                             <dl>
-                                <dt><small>ADDIXO</small></dt>
+                                <dt>ADDIXO</dt>
                                 <dt><small>Feb 2019-July 2020 : 6 mos</small></dt>
                                 <dt><small>Tunis, Tunisia</small></dt>
                                 <dt>Tasks:</dt>
@@ -93,28 +96,125 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-5"><h5>Technologies that i am using</h5>
+            <div class="col-md-4"><h5>Technologies that i am using</h5>
                 <div class="card card-body">
-                    <p>glkghfliuhzelmfiusqmegh</p>
-                    <p>glkghfliuhzelmfiusqmegh</p>
-                    <p>glkghfliuhzelmfiusqmegh</p>
-                </div>
-                <br>
-                <h5>My short term goals</h5>
+                    <h5>Language & Frameworks</h5>
+                    <div class="row">
+                        <div> <img src="{% static '../../static/images/python-5.svg' %}" height="40" width="50" hspace="5" vspace="5"></div>
+                        <div> <img src="{% static '../../static/images/django-community.svg' %}" height="40" width="50" hspace="5" vspace="5"></div>
+                        <div> <img src="{% static '../../static/images/flask.svg' %}" height="40" width="50" hspace="5" vspace="5"></div>
+
+                    </div>
+                        <h5>Front End</h5>
+                        <div class="row">
+                                <div> <img src="{% static '../../static/images/html5.svg' %}" height="40" width="50" hspace="2" vspace="5"></div>
+                                <div> <img src="{% static '../../static/images/css-5.svg' %}" height="40" width="50" hspace="2" vspace="5"></div>
+                                <div> <img src="{% static '../../static/images/javascript.svg' %}" height="40" width="50" hspace="2" vspace="5"></div>
+                                <div> <img src="{% static '../../static/images/bootstrap-4.svg' %}" height="40" width="50" hspace="2" vspace="5"></div>
+                                <div> <img src="{% static '../../static/images/jquery.svg' %}" height="40" width="50" hspace="2" vspace="5"></div>
+                        </div>
+                    <h5>Database</h5>
+                        <div class="row">
+                                <div> <img src="{% static '../../static/images/orm.png' %}" height="40" width="50" hspace="10" vspace="5"></div>
+                                <div> <img src="{% static '../../static/images/sqlite.svg' %}" height="40" width="50" hspace="10" vspace="5"></div>
+                                <div> <img src="{% static '../../static/images/postgresql.svg' %}" height="40" width="50" hspace="10" vspace="5"></div>
+
+                        </div>
+                    <h5>Version Control</h5>
+                        <div class="row">
+                                <div> <img src="{% static '../../static/images/git-icon.svg' %}" height="40" width="40" hspace="5" vspace="10"></div>
+                                <div> <img src="{% static '../../static/images/github-1.svg' %}" height="40" width="40" hspace="5" vspace="10"></div>
+                                <div> <img src="{% static '../../static/images/gitlab.svg' %}" height="40" width="40" hspace="5" vspace="10"></div>
+                        </div>
+                    <h5>Tools</h5>
+                        <div class="row">
+                            <div> <img src="{% static '../../static/images/bash-1.svg' %}" height="40" width="50" hspace="5" vspace="5"></div>
+                            <div> <img src="{% static '../../static/images/pycharmide.jpeg' %}" height="40" width="50" hspace="5" vspace="5"></div>
+                                <div> <img src="{% static '../../static/images/postman.png' %}" height="40" width="60" hspace="5" vspace="5"></div>
+                            <div> <img src="{% static '../../static/images/selenium-logo.svg' %}" height="40" width="60" hspace="5" vspace="5"></div>
+                        </div>
+                    <h5>Project Management Tools</h5>
+                        <div class="row">
+                                <div> <img src="{% static '../../static/images/scrum.jpg' %}" height="40" width="50" hspace="5" vspace="5"></div>
+                                <div> <img src="{% static '../../static/images/jira.svg' %}" height="40" width="70" hspace="5" vspace="10"></div>
+                        </div>
+                    <h5>Operating systems</h5>
+                        <div class="row">
+                                <div> <img src="{% static '../../static/images/linux-tux-1.svg' %}" height="40" width="50" hspace="5" vspace="5"></div>
+                                <div> <img src="{% static '../../static/images/microsoft-windows-22.svg' %}" height="40" width="50" hspace="5" vspace="5"></div>
+                        </div>
+                    </div>
+            <br>
+            <h5>My short term goals</h5>
                 <div class="card card-body">
-                    <p>glkghfliu5555555sqmegh</p>
+                    <h5>Javascript</h5>
+                        <div class="row">
+                                <div> <img src="{% static '../../static/images/vue-js.svg' %}" height="40" width="50" hspace="5" vspace="5"></div>
+                                <div> <img src="{% static '../../static/images/react.svg' %}" height="40" width="50" hspace="5" vspace="5"></div>
+                        </div>
+                    <h5>CI/CD</h5>
+                        <div class="row">
+                                <div> <img src="{% static '../../static/images/docker.svg' %}" height="40" width="50" hspace="5" vspace="5"></div>
+                                <div> <img src="{% static '../../static/images/jenkins.jpg' %}" height="40" width="50" hspace="5" vspace="5"></div>
+                                <div> <img src="{% static '../../static/images/circleci.svg' %}" height="40" width="50" hspace="5" vspace="5"></div>
+                                <div> <img src="{% static '../../static/images/kubernets.svg' %}" height="40" width="50" hspace="5" vspace="5"></div>
+                                <div> <img src="{% static '../../static/images/travis.jpg' %}" height="40" width="50" hspace="5" vspace="5"></div>
+                        </div>
+                    <h5>Cloud</h5>
+                        <div class="row">
+                                <div> <img src="{% static '../../static/images/google-cloud-1.svg' %}" height="50" width="50" hspace="5" vspace="5"></div>
+                                <div> <img src="{% static '../../static/images/aws-2.svg' %}" height="50" width="50" hspace="5" vspace="5"></div>
+                                <div> <img src="{% static '../../static/images/azure-1.svg' %}" height="50" width="50" hspace="5" vspace="5"></div>
+                        </div>
                 </div>
             </div>
             <br>
-        </div>
+            </div>
         <br>
         <br>
         <div class="row">
-            <div class="col-md-7"><h5>How i learned</h5>
-                <div class="card card-body"></div>
-            </div>
-            <div class="col-md-5"><h5> Accomplishments</h5>
+            <div class="col-md-8"><h5>How i learned</h5>
                 <div class="card card-body">
+                    <ul>
+                        <li>
+                            <strong>ESPRIT</strong>
+                            <a href="https://esprit.tn/"> <img src="{% static '../../static/images/Esprit.jpg' %}" style="float:right" width="100" height="50" title="ESPRIT"></a>
+                            <dl>
+                                <dt>Diplome Natianal d'ingénieur</dt>
+                                <dt><small>2016-2019</small></dt>
+                                <dt><small>Tunis, Tunisia</small></dt>
+                            </dl>
+                        </li>
+                        <li>
+                            <strong>Online courses</strong>
+                            <dd>
+                                <ul>
+                                    <li>edX</li>
+                                    <li>Udemy</li>
+                                </ul>
+                            </dd>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4"><h5> Accomplishments</h5>
+                <div class="card card-body">
+                    <ul>
+                        <li>
+                            <strong>Languages</strong>
+                            <dd>
+                                <ul>
+                                    <li>Arabic</li>
+                                    <li>French</li>
+                                    <li>English</li>
+                                    <li>Germain</li>
+                                </ul>
+                            </dd>
+                        </li>
+                        <li>
+                            <strong>Hobbies</strong>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -134,11 +234,11 @@
 
     if($lis.length > 0){
         $ul
-            .append($('<span class="showmore"><li class="expand">' + (isExpanded ? 'Show Less' : 'Show More') + '</li></span>')
+            .append($('<span class="showmore"><li class="expand">' + (isExpanded ? 'Show Less' : '... Show More') + '</li></span>')
             .click(function(event){
                 var isExpanded = $ul.hasClass('expanded');
                 event.preventDefault();
-                $(this).html(isExpanded ? '...Show More' : 'Show Less');
+                $(this).html(isExpanded ? '... Show More' : 'Show Less');
                 $ul.toggleClass('expanded');
                 $lis.toggle();
             }));
