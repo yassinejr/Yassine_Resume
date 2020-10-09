@@ -15,21 +15,35 @@
         {% include 'base/about.html' %}
         <br>
         <div class="row">
-            {% include 'base/experience.html' %}
-            <br>
-            {% include 'base/technologies.html' %}
-            <br>
-            {% include 'base/goals.html' %}
-        </div>
-        <br>
-        <br>
-        <div class="row">
-            {% include 'base/school.html' %}
-            <br>
-            {% include 'base/accomplishments.html' %}
-            <br>
-        </div>
+            <div class="col-md-8">
+                <div class="flex-container">
+                    <div>
+                    {% include 'base/experience.html' %}
+                    </div>
+                    <div>
+                    {% include 'base/school.html' %}
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="flex-container">
+                    <div>
+                        {% include 'base/skills.html' %}
+                    </div>
+                    <div>
+                        {% include 'base/technologies.html' %}
+                    </div>
+                    <div>
+                        {% include 'base/goals.html' %}
+                    </div>
+                    <div>
+                        {% include 'base/accomplishments.html' %}
+                    </div>
+                </div>
+            </div>
     </div>
+</div>
 </body>
 </html>
 
@@ -52,4 +66,9 @@
             }));
     }
 });
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
 </script>
