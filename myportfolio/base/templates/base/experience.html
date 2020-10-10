@@ -5,7 +5,7 @@
 <div class="card card-body h-100">
     <ul>
         <li>
-            <strong>Python/Django Backend Engineer</strong>
+            <strong> Junior Python/Django Backend Engineer</strong>
             <a href="https://neopolis-dev.com/"> <img src="{% static '../../static/images/Neo.jpeg' %}" style="float:right" width="120" height="100" title="Neopolis Development"></a>
             <dl>
                 <dt>Neopolis Development</dt>
@@ -17,7 +17,7 @@
                         <li>Developing, testing and debugging software tools utilized by clients and
                             internal customers</li>
                         <li>Coding test programs and evaluating existing engineering processes.</li>
-                        <li>Collaborating with internal teams to convert end user feedback into
+                        <li>Collaborating with the Agile team to convert end user feedback into
                             meaningful and improved solutions.</li>
                         <li>Resolving ongoing problems and accurately documented progress of
                             Python/Django project.</li>
@@ -44,7 +44,41 @@ Django, Raspberry Pi, NodeMCU</li>
             </dl>
         </li>
         <li>
-            <strong>Software Engineer Intern</strong>
+            <strong>Graduation Engineer Intern</strong>
+            <a href="https://www.addixo.com/fr/"> <img src="{% static '../../static/images/Addixo.png' %}" style="float:right" width="120" height="150" title="ADDIXO"></a>
+            <dl>
+                <dt>ADDIXO</dt>
+                <dt><small>Feb 2019-July 2020 : 6 mos</small></dt>
+                <dt><small>Tunis, Tunisia</small></dt>
+                <dt>Tasks:</dt>
+                <dd>
+                    <ul>
+                        <li>aaaa</li>
+                        <li>zzzz</li>
+                        <li>eeee</li>
+                    </ul>
+                </dd>
+            </dl>
+        </li>
+        <li>
+            <strong>Summer Engineering Intern</strong>
+            <a href="https://www.addixo.com/fr/"> <img src="{% static '../../static/images/Addixo.png' %}" style="float:right" width="120" height="150" title="ADDIXO"></a>
+            <dl>
+                <dt>ADDIXO</dt>
+                <dt><small>Feb 2019-July 2020 : 6 mos</small></dt>
+                <dt><small>Tunis, Tunisia</small></dt>
+                <dt>Tasks:</dt>
+                <dd>
+                    <ul>
+                        <li>aaaa</li>
+                        <li>zzzz</li>
+                        <li>eeee</li>
+                    </ul>
+                </dd>
+            </dl>
+        </li>
+        <li>
+            <strong>Summer Engineering Intern</strong>
             <a href="https://www.addixo.com/fr/"> <img src="{% static '../../static/images/Addixo.png' %}" style="float:right" width="120" height="150" title="ADDIXO"></a>
             <dl>
                 <dt>ADDIXO</dt>
@@ -62,3 +96,25 @@ Django, Raspberry Pi, NodeMCU</li>
         </li>
     </ul>
 </div>
+
+
+<script>
+    $('ul.expandible').each(function(){
+    var $ul = $(this),
+        $lis = $ul.find('li:gt(1)'),
+        isExpanded = $ul.hasClass('expanded');
+    $lis[isExpanded ? 'show' : 'hide']();
+
+    if($lis.length > 0){
+        $ul
+            .append($('<span class="showmore"><li class="expand">' + (isExpanded ? 'Show Less' : '... Show More') + '</li></span>')
+            .click(function(event){
+                var isExpanded = $ul.hasClass('expanded');
+                event.preventDefault();
+                $(this).html(isExpanded ? '... Show More' : 'Show Less');
+                $ul.toggleClass('expanded');
+                $lis.toggle();
+            }));
+    }
+});
+</script>
