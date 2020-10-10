@@ -5,7 +5,7 @@
     <div class="card card-body">
         <ul>
             <li>
-                <strong>Private Higher School of Engineering and Technologies - ESPRIT</strong>
+                <strong>Private Higher School of Engineering and Technologies</strong>
                 <a href="https://esprit.tn/"> <img src="{% static '../../static/images/Esprit.jpg' %}" style="float:right" width="100" height="50" title="ESPRIT"></a>
                 <dl>
                     <dt>National diploma in Electromechanical engineering : mechatronics & software development speciality</dt>
@@ -14,13 +14,122 @@
                 </dl>
             </li>
             <li>
-                <strong>Online courses</strong>
+                <strong>ISSAT Sousse</strong>
+                <a href="https://esprit.tn/"> <img src="{% static '../../static/images/issats.png' %}" style="float:right" width="100" height="50" title="ESPRIT"></a>
+                <dl>
+                    <dt>National diploma in Electromechanical engineering : mechatronics & software development speciality</dt>
+                    <dt><small>2016-2019</small></dt>
+                    <dt><small>Tunis, Tunisia</small></dt>
+                </dl>
+            </li>
+            <li>
+                <strong>Online courses & Certifications</strong>
                 <dd>
-                    <ul>
-                        <li>edX</li>
-                        <li>Udemy</li>
+                    <ul class="expandible">
+                        <li>
+                            <strong>Python and Django Full Stack Web Developer Bootcamp</strong>
+                            <img src="{% static '../../static/images/udemy.png' %}" style="float:right" width="80" height="40" title="Tunisian Red Crescent"></a>
+                            <dl>
+                                <dt><small>Udemy</small></a>
+                                </dt>
+                                <dt><small>2020</small></dt>
+                                <dt><a href="https://www.udemy.com/certificate/UC-497d1f45-3c01-4750-a9e5-b64cfbf7c1b6/"><small>See certificate</small></a>
+                            </dl>
+                        </li>
+                        <li>
+                            <strong>Learn About Agile Project Management and SCRUM</strong>
+                            <img src="{% static '../../static/images/open.png' %}" style="float:right" width="80" height="40" title="Tunisian Red Crescent"></a>
+                            <dl>
+                                <dt><small> OpenClassrooms</small></a>
+                                </dt>
+                                <dt><small>2020</small></dt>
+                                <dt><a href="https://openclassrooms.com/en/course-certificates/2855124818"><small>See certificate</small></a>
+                            </dl>
+                        </li>
+                        <li>
+                            <strong>Linux for Absolute Beginners</strong>
+                            <img src="{% static '../../static/images/udemy.png' %}" style="float:right" width="80" height="40" title="Tunisian Red Crescent"></a>
+                            <dl>
+                                <dt><small>Udemy</small></a>
+                                </dt>
+                                <dt><small>2020</small></dt>
+                                <dt><a href="https://www.udemy.com/certificate/UC-d3a72862-c260-47a6-9ca6-4bbbec644614/"><small>See certificate</small></a>
+                            </dl>
+                        </li>
+                        <li>
+                            <strong>Complete course of SQL Database Programming</strong>
+                            <img src="{% static '../../static/images/udemy.png' %}" style="float:right" width="80" height="40" title="Tunisian Red Crescent"></a>
+                            <dl>
+                                <dt><small>Udemy</small></a>
+                                </dt>
+                                <dt><small>2020</small></dt>
+                                <dt><a href="https://www.udemy.com/certificate/UC-9c5e0415-0e92-451c-b9f7-372f91a27a0c/"><small>See certificate</small></a>
+                            </dl>
+                        </li>
+                        <li>
+                            <strong>HTML course</strong>
+                            <img src="{% static '../../static/images/solo.png' %}" style="float:right" width="80" height="40" title="Tunisian Red Crescent"></a>
+                            <dl>
+                                <dt><small>SoloLearn</small></a>
+                                </dt>
+                                <dt><small>2020</small></dt>
+                                <dt><a href="https://www.sololearn.com/Certificate/1014-15692073/pdf/"><small>See certificate</small></a>
+                            </dl>
+                        </li>
+                        <li>
+                            <strong>Python 3 course</strong>
+                            <img src="{% static '../../static/images/solo.png' %}" style="float:right" width="80" height="40" title="Tunisian Red Crescent"></a>
+                            <dl>
+                                <dt><small>SoloLearn</small></a>
+                                </dt>
+                                <dt><small>2020</small></dt>
+                                <dt><a href="https://www.sololearn.com/Certificate/1073-15692073/pdf/"><small>See certificate</small></a>
+                            </dl>
+                        </li>
+                        <li>
+                            <strong>Introduction to Python: Absolute Beginner</strong>
+                            <img src="{% static '../../static/images/edx.png' %}" style="float:right" width="80" height="40" title="Tunisian Red Crescent"></a>
+                            <dl>
+                                <dt><small>Microsoft-edX</small></a>
+                                </dt>
+                                <dt><small>2020</small></dt>
+                                <dt><a href="https://courses.edx.org/certificates/1732c944316a465696416230065fb7b2"><small>See certificate</small></a>
+                            </dl>
+                        </li>
+                        <li>
+                            <strong>Tunisian Red crescent</strong>
+                            <img src="{% static '../../static/images/croissant.jpg' %}" style="float:right" width="80" height="40" title="Tunisian Red Crescent"></a>
+                            <dl>
+                                <dt>First Aid rescuer</dt>
+                                <dt><small>2017</small></dt>
+                                <dt><a href="https://drive.google.com/file/d/1vGx3uGHpp-2VoEh4S6P7K6SwdrAyY0oE/view"><small>See certificate</small></a>
+                            </dl>
+                        </li>
+
                     </ul>
                 </dd>
             </li>
         </ul>
     </div>
+
+
+<script>
+        $('ul.expandible').each(function(){
+    var $ul = $(this),
+        $lis = $ul.find('li:gt(1)'),
+        isExpanded = $ul.hasClass('expanded');
+    $lis[isExpanded ? 'show' : 'hide']();
+
+    if($lis.length > 0){
+        $ul
+            .append($('<span class="showmore"><li class="expand">' + (isExpanded ? 'Show Less' : '... Show More') + '</li></span>')
+            .click(function(event){
+                var isExpanded = $ul.hasClass('expanded');
+                event.preventDefault();
+                $(this).html(isExpanded ? '... Show More' : 'Show Less');
+                $ul.toggleClass('expanded');
+                $lis.toggle();
+            }));
+    }
+});
+</script>
