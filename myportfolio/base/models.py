@@ -6,7 +6,7 @@ class ContactForm(models.Model):
     email = models.EmailField(max_length=200,null=True)
     subject = models.CharField(max_length=200,null=True)
     message = models.TextField(null=True)
-    date = models.DateTimeField(auto_now_add=True)
+    date = models.DateTimeField(auto_now_add=True, null=True)
 
     class Meta:
         verbose_name_plural = "Feedback"

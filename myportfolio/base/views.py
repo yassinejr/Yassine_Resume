@@ -12,5 +12,5 @@ def home(request):
 
     data = ContactForm(name=name, email=email, subject=subject, message=message)
     data.save()
-    return render(request, 'base/cv.html',{})
+    return render(request, 'base/index.html', {})
 
